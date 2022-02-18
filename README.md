@@ -1,8 +1,29 @@
 # Deep Learning Homework: Charity Funding Predictor
 
-## Background
+## Overview of my analysis
 
-The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+
+
+The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. Using Machine learning and Neural networks for this project. I have used features in the dataset to create a binary classifer that will help to predict whether applicants will be successful if funded by Alphabet Soup. For the analysis we had data containing 34,000 organizations that have received funding from Alphabet Soup. Below are overview steps taken for this project.
+
+* Preprocessing the data for the neural network
+* Compile, Train and Evaluate the model
+* Optimize the model
+
+## Results
+
+### Data Processing
+ - To clean the data I removed the EIN and NAME columns since they no value to the model.
+ - Variable that was considered as the target for my model: IS_SUCCESSFUL Column
+ - Determine the number of unique values for each column.
+
+### Compiling, Training, and Evaluating the Model
+ - Used 2 Hidden Layers
+ - Applied 200 neurons (Layer1), 50 neurons (Layer2)
+ - Used "relu" activation function for the first and second hidden layers and "sigmoid" activition funciton for the output layer.
+
+![Attempt1Model](Images/Attempt1Model.PNG)
+
 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
