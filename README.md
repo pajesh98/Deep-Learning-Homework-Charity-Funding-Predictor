@@ -13,9 +13,9 @@ The non-profit foundation Alphabet Soup wants to create an algorithm to predict 
 ## Results
 
 ### Data Processing
- - To clean the data I removed the EIN and NAME columns since they no value to the model.
- - Variable that was considered as the target for my model: IS_SUCCESSFUL Column
- - Determine the number of unique values for each column.
+ - Variable that was considered as the target for my model: IS_SUCCESSFUL Column.
+ - Variable that was considered to be the features for the model: Every Column except for IS_SUCCESSFUL which is our target and the ones we will drop
+ - Variable that were neither targets or features for the dataset: Columns that I dropeed are EIN, NAME because they have no values or impact on our outcome. 
 
 ### Compiling, Training, and Evaluating the Model
  - Used 2 Hidden Layers
